@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document1</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <style>
+    .head {
+      box-sizing: border-box;
+      background-color: #009270;
+      width: 80%;
+      margin: auto;
+      display: flex;
+      height: 55px;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    .head :hover {
+      cursor: pointer;
+    }
+
+    .logo {
+      width: 10%;
+      padding-left: 10px;
+      padding-top: 10px;
+      padding-right: 10px;
+    }
+
+    .menu {
+      display: flex;
+      justify-content: space-between;
+      width: 80%;
+
+    }
+
+    li {
+      display: inline-block;
+    }
+
+    li>a,
+    .dropbtn {
+      margin-left: 10px;
+      padding: 13px 5px 13px 5px;
+
+    }
+
+    .menu a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .dropdown .dropbtn {
+      font-size: 16px;
+      color: white;
+      border: none;
+      background-color: transparent;
+    }
+
+    .head a:hover {
+      background-color: #028062;
+    }
+
+    .dropdown:hover {
+      background-color: #028062;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    #CP {
+      font-size: 15px;
+      padding: 10px;
+      border-radius: 20px;
+      border: 1px solid white;
+
+    }
+
+    .dropbtn {
+      display: flex;
+    }
+
+    #search {
+      color: white;
+      margin-left: 10px;
+
+    }
+
+    #profile {
+      margin-left: 10px;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="head">
+    <div class="logo">
+      <img src="https://www.cricbuzz.com/images/cb_logo.svg" alt="error" />
+    </div>
+    <div class="menu">
+      <ul style="padding-left: 0px;">
+        <li><a href="">Live Scores</a></li>
+        <li><a href="">Schedule</a></li>
+        <li><a href="">Archives</a></li>
+        <li>
+          <div class="dropdown">
+            <button class="dropbtn">
+              News<span class="material-symbols-outlined">
+                arrow_drop_down
+              </span>
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">All Stories</a>
+              <a href="#">Cricbuzz Plus</a>
+              <a href="#">Latest News</a>
+              <a href="">Topics</a>
+              <a href="">Spotlight</a>
+              <a href="">Opinions</a>
+              <a href="">Specials</a>
+              <a href="">Stats & Analysis</a>
+              <a href="">Interviews</a>
+              <a href="">Live Blogs</a>
+              <a href="">Harsha Bhogle</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="dropdown">
+            <button class="dropbtn">
+              Series<span class="material-symbols-outlined">
+                arrow_drop_down
+              </span>
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">South Africa tour of India, 2022</a>
+              <a href="#">Australia tour of Sri Lanka, 2022</a>
+              <a href="#">New Zealand tour of England, 2022</a>
+              <a href="">Bangladesh tour of West Indies, 2022</a>
+              <a href="">England tour of Netherlands, 2022</a>
+              <a href="">T20 Blast 2022</a>
+              <a href="">Ranji Trophy 2021-2022</a>
+              <a href="">ICC Cricket World Cup League Two 2019-23</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="dropdown">
+            <button class="dropbtn">
+              Teams<span class="material-symbols-outlined">
+                arrow_drop_down
+              </span>
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <table>
+                <thead>
+                  <th>TEST TEAMS</th>
+                  <th>ASSOCIATE</th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>India</td>
+                    <td>Italy</td>
+                  </tr>
+                  <tr>
+                    <td>Ireland</td>
+                    <td>Botswana</td>
+                  </tr>
+                  <tr>
+                    <td>Pakistan</td>
+                    <td>Belgium</td>
+                  </tr>
+                  <tr>
+                    <td>Australia</td>
+                    <td>Iran</td>
+                  </tr>
+                  <tr>
+                    <td>Sri Lanka</td>
+                    <td>Denmark</td>
+                  </tr>
+                  <tr>
+                    <td>Bangladesh</td>
+                    <td>Singapore</td>
+                  </tr>
+                  <tr>
+                    <td>England</td>
+                    <td>Namibia</td>
+                  </tr>
+                  <tr>
+                    <td>West Indies</td>
+                    <td>Uganda</td>
+                  </tr>
+                  <tr>
+                    <td>South Africa</td>
+                    <td>Malaysia</td>
+                  </tr>
+                  <tr>
+                    <td>Zimbabwe</td>
+                    <td>Nepal</td>
+                  </tr>
+                  <tr>
+                    <td>New Zealand</td>
+                    <td>Germany</td>
+                  </tr>
+                  <tr>
+                    <td>Afghanistan</td>
+                    <td>Canada</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="dropdown">
+            <button class="dropbtn">
+              Videos<span class="material-symbols-outlined">
+                arrow_drop_down
+              </span>
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">All Vedios</a>
+              <a href="#">Categories</a>
+              <a href="#">Playlists</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="dropdown">
+            <button class="dropbtn">
+              Rankings<span class="material-symbols-outlined">
+                arrow_drop_down
+              </span>
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">ICC Rankings-Men</a>
+              <a href="#">ICC Rankings-Women</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="dropdown">
+            <button class="dropbtn">
+              More<span class="material-symbols-outlined">
+                arrow_drop_down
+              </span>
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">World Test Championship</a>
+              <a href="#">World Cup Super League</a>
+              <a href="#">Quiz</a>
+              <a href="">Photos</a>
+              <a href="">Mobile Apps</a>
+              <a href="">Careers</a>
+              <a href="">Contact Us</a>
+            </div>
+          </div>
+        </li>
+        <button id="CP"">
+          <a style=" color: black;" href="#">Cricbuzz Plus</a>
+        </button>
+      </ul>
+    </div>
+    <div id="search">
+      <span class="material-symbols-outlined">
+        search
+      </span>
+    </div>
+    <div id="profile">
+      <span class="material-symbols-outlined">
+        account_circle
+      </span>
+    </div>
+  </div>
+</body>
+
+</html>

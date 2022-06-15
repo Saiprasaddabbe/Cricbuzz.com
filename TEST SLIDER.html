@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main {
+            display: flex;
+            justify-content: flex-start;
+            width: 80%;
+            margin: auto;
+
+        }
+
+        h2 {
+            margin-left: 10%;
+            color: #33A88D;
+        }
+
+        #main>button {
+            position: absolute;
+            top: 110px;
+            background-color: #33A88D;
+            color: white;
+            border: none;
+            border-radius: 100%;
+            padding: 20px;
+        }
+
+        #main>button:first-child {
+            position: absolute;
+            right: 157px;
+            /* background-color: transparent; */
+        }
+
+        #main>button:last-child {
+            position: absolute;
+            right: 157px;
+            /* background-color: transparent; */
+        }
+
+        #card1,
+        #card2,
+        #card3,
+        #card4 {
+            border-left: 1px solid grey;
+            margin-right: 20px;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>FEATURED MATCHES</h2>
+    <div id="main">
+        <button>></button>
+        <button>
+            < </button>
+    </div>
+
+</body>
+
+</html>
+<script>
+    let card1 = document.createElement("div");
+    card1.innerHTML = `<p>${"IND 179"}</p>
+                    <p>${"RSA 131"}</p>
+                    <p>${"India Won by 48 Runs"}</p>
+    `
+    card1.setAttribute("id", "card1");
+    let card2 = document.createElement("div");
+    card2.innerHTML = `<p>${"IND 179"}</p>
+                    <p>${"RSA 131"}</p>
+                    <p>${"India Won by 48 Runs"}</p>
+    `
+    card2.setAttribute("id", "card2");
+    let card3 = document.createElement("div");
+    card3.innerHTML = `<p>${"IND 179"}</p>
+                    <p>${"RSA 131"}</p>
+                    <p>${"India Won by 48 Runs"}</p>
+    `
+    card3.setAttribute("id", "card3");
+    let card4 = document.createElement("div");
+    card4.innerHTML = `<p>${"IND 179"}</p>
+                    <p>${"RSA 131"}</p>
+                    <p>${"India Won by 48 Runs"}</p>
+    `
+    card4.setAttribute("id", "card4");
+    let card5 = document.createElement("div");
+    card5.innerHTML = `<p>${"IND 179"}</p>
+                    <p>${"RSA 131"}</p>
+                    <p>${"India Won by 48 Runs"}</p>
+    `
+    card5.setAttribute("id", "card5");
+    let card6 = document.createElement("div");
+    card6.innerHTML = `<p>${"IND 179"}</p>
+                    <p>${"RSA 131"}</p>
+                    <p>${"India Won by 48 Runs"}</p>
+    `
+    card6.setAttribute("id", "card6");
+    document.querySelector("#main").append(card1, card2, card3, card4);
+
+    let buttons = document.querySelectorAll("button");
+    let array = [card5, card6];
+    let divNum = 0;
+    buttons[0].addEventListener("click", function () {
+        if (divNum === 0) {
+            divNum = array.length - 1;
+        } else {
+            divNum--;
+
+        }
+        document.querySelector("#card1").innerHTML = "";
+        document.querySelector("#card2").innerHTML = "";
+        document.querySelector("#card3").innerHTML = "";
+        document.querySelector("#card4").innerHTML = "";
+        document.querySelector("#main").append(array[divNum]);
+    })
+
+    buttons[1].addEventListener("click", function () {
+        if (divNum === array.length - 1) {
+            divNum = 0;
+        } else {
+            divNum++;
+
+        }
+        document.querySelector("#card1").innerHTML = "";
+        document.querySelector("#card2").innerHTML = "";
+        document.querySelector("#card3").innerHTML = "";
+        document.querySelector("#card4").innerHTML = "";
+        document.querySelector("#main").append(array[divNum]);
+    })
+
+
+</script>
