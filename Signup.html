@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignUp</title>
+    <style>
+      #top {
+        width: 90%;
+        height: 60px;
+        background-color: #009270;
+        margin: auto;
+      }
+      a > img {
+        width: 150px;
+        height: 60px;
+        padding-bottom: 40px;
+        margin-left: 20px;
+      }
+      #bottom {
+        border: 1px solid white;
+        width: 90%;
+        margin: auto;
+        margin-top: 10px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      }
+      #nav p,
+      #nav > h3 {
+        display: inline;
+        font-family: "Open Sans", sans-serif;
+        font-size: 20px;
+        line-height: 65px;
+      }
+      #nav p {
+        margin-left: 20px;
+        text-decoration:underline;
+      }
+      #nav > img {
+        width: 120px;
+        height: 60px;
+        position: absolute;
+        background-size: cover;
+        margin-left: 1170px;
+      }
+      #nav{
+        border: 1px solid rgb(241, 232, 232);
+      }
+      .tacbox>input, .tacbox>label {
+        display: inline;
+        width: 90%;
+      }
+      .tacbox>input{
+        margin-left: -140px;
+      }
+      .tacbox>label{
+        margin-left:-130px;
+      }
+
+      #main{
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 450px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            height: 570px;
+            padding: 30px;
+            margin-top: 20px;
+            border-radius: 20px;
+            line-height: 20px;
+            
+        }
+        input{
+            margin-bottom: 20px;
+            width: 85%;
+            height: 30px;
+            border-radius: 10px;
+            border: 1px solid grey;
+            font-size: 20px;
+            padding: 5px;
+        }
+        h2{
+
+            text-align: center;
+        }
+        button{
+            width: 90%;
+            border-radius: 10px;
+            height: 30px;
+            padding: 20px;
+            padding-bottom: 35px;
+            font-size: 20px;
+            font-weight: bold;
+            border: none;
+        }
+        form{
+            margin-left: 20px;
+        }
+        form>h1{
+text-align: center;
+        }
+        form>p{
+text-align: center;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="top">
+      <a href="homePage.html"
+        ><img src="https://www.cricbuzz.com/images/cb_logo.svg" alt="error"
+      /></a>
+    </div>
+    <div id="bottom">
+      <div id="nav">
+        <p> <a href="homePage.html">  Home ></a></p>
+        <h3>Account</h3>
+        <img
+          src="https://www.cricbuzz.com/images/cb_logo_plus_color.svg"
+          alt="error"
+        />
+      </div>
+      <div id="main">
+        <form action="">
+          <h1>Login / Sign Up</h1>
+          <p>We will send OTP to your email id</p>
+
+          <label for="">Full name</label><br />
+          <input
+            id="name"
+            type="text"
+            placeholder="Enter your full name"
+          /><br />
+          <label for="">Email</label><br />
+          <input id="email" type="text" placeholder="Enter email" /><br />
+          <label for="">Password</label><br />
+          <input id="pass" type="password" placeholder="Enter password" /><br />
+          <div class="tacbox">
+            <input id="checkbox" type="checkbox" />
+            <label for="checkbox">
+              I agree to these <a href="#">Terms and Conditions</a>.</label
+            >
+          </div>
+          <button>SIGN UP</button><br />
+          <h2>Already have an account? <a href="login.html">Sign In</a></h2>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script>
+       document.querySelector("form").addEventListener("submit",myfunc);
+    let myarr = JSON.parse(localStorage.getItem("aman"))|| [];
+
+    function myfunc(){
+
+        let myobj = {
+            name: document.querySelector("#name").value,
+            email: document.querySelector("#email").value,
+            password: document.querySelector("#pass").value,
+        }
+        myarr.push(myobj);
+        localStorage.setItem("aman",JSON.stringify(myarr));
+        alert("Sign Up successfully");
+
+    }
+  </script>
+</html>
