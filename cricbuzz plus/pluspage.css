@@ -15,7 +15,7 @@
     color: #fff;
     margin-left: 40px;
     margin-top: 10px;
-   
+    height: 280px;
     
 }
 .info div{
@@ -38,7 +38,7 @@ button{
 }
 .photo{
     width: 250px;
-    height: 300px;
+    height: 250px;
     margin-top: 50px;
 margin-left: 90px;
 }
@@ -48,26 +48,37 @@ margin-left: 90px;
 .splide__arrow--next svg{
     position: relative;
     top: 0;
-    right: 0px;
+    left: 40px;
 }
 .splide__arrow--prev svg{
     position: relative;
     top: 0;
-    right: 50px;
+    right: 45px;
 }
 .container{
     width: 70%;
     margin: auto;
 }
 .box{
-    width: 220px;
-    height: 250px;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-
+    width: 230px;
+    height: 280px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border: 0.5px solid grey; 
+    gap: 10px;
+}
+.outer{
+    background-color: #fff;
+    width: 70%;
 }
 .product-img{
-    width: 220px;
+    width: 230px;
     height: 110px;
+}
+.product-info{
+    height: 170px;
+    width: 230px;
+    margin-top: 50px;
+    margin-right: 5px;
 }
 img{
     width: 100%;
@@ -88,12 +99,16 @@ img{
 body {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 10px;
+}
+.heading{
+    margin-left: 220px;
+
 }
         .bar{
             width: 70%;
             height: 200px;
-            border: 1px solid black;
+            border: 1px solid grey;
             margin: auto;
             display: flex;
 
@@ -104,7 +119,7 @@ body {
 
         }
         .bar-img{
-            height: 200px;
+            height: 198px;
             width: 250px;
             
         }
@@ -154,7 +169,7 @@ body {
         
        }
        #btn:hover{
-        background-color: black;
+        background-color: #009270;
         color: white;
        }
        body{
@@ -185,7 +200,7 @@ body {
         width: 100%;
         padding: 25px;
         position: relative;
-        margin-top: 500px;
+        margin-top: 50px;
     }
     .footer-col h4{
         font-size: 18px;
