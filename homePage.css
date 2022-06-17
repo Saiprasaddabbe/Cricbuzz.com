@@ -124,6 +124,7 @@
                    background-color: #4a4a4aba;
                    color: white;
                    justify-content: space-between;
+                   margin-bottom: 20px;
                }
 
                #tabs {
@@ -197,7 +198,7 @@
                    grid-template-rows: repeat(10 100px);
                    margin-left: 149px;
                    background-color: white;
-                   margin-top: 8px;
+                   /* margin-top: 0px; */
                    padding-left: 8px;
                    padding-right: 10px;
                    height: fit-content;
@@ -227,21 +228,14 @@
                /*The Photos Section...  */
                #Lbox1 {
 
-                   /* margin-top: 0px; */
+
                    width: 15%;
                    display: flex;
                    flex-direction: column;
-                   /* grid-template-columns: repeat(1 1fr);
-            grid-template-rows: repeat(6 200px);
-            gap: 10px; */
                    margin-left: 149px;
                    background-color: white;
                    padding-left: 8px;
                    padding-right: 10px;
-                   /* align-items: center;
-            height: fit-content; */
-
-                   /* margin-top: 0px; */
 
 
                }
@@ -317,7 +311,7 @@
                    width: 30%;
                    justify-content: center;
                    align-items: center;
-                   margin-top: 10px;
+
                    padding-right: 20px;
                    padding-left: 20px;
                    height: 1515px;
@@ -364,13 +358,13 @@
                #BODY {
                    display: flex;
                    /* grid-template-columns: repeat(3, 200px);
-            grid-template-rows: repeat(3, auto); */
+         grid-template-rows: repeat(3, auto); */
                }
 
                #ads {
                    margin-left: 130px;
                    background-color: white;
-                   margin-top: 10px;
+
                    width: 340px;
 
                }
@@ -452,6 +446,20 @@
                .footer p a {
                    color: white;
                    text-transform: capitalize;
+               }
+
+               .box {
+                   border-right: solid grey 1px;
+                   background-color: white;
+                   padding-left: 30px;
+                   padding-top: 10px;
+                   padding-bottom: 10px;
+
+               }
+
+               .xcontainer {
+                   width: 80%;
+
                }
 
                /* SHAD ATIF START */

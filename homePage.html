@@ -9,6 +9,8 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="stylesheet" href="homePage.css">
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/themes/splide-skyblue.min.css">
 
 
 </head>
@@ -220,6 +222,86 @@
     </div>
   </div>
   <!-- /* ------------------SAIPRASAD FINISH --------------------------------- */ -->
+  <h3
+    style="margin-left: 10%;height: 10%;background-color: white;width: 79.6%;margin-top: 0px;margin-bottom: 0px;padding-left: 5px;">
+    FEATURED MATCHES</h3>
+  <div class="xcontainer" style="margin: auto;">
+    <section class="splide" aria-label="Splide Basic HTML Example">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <div class="box">
+              <p>ENG498-4 (50)</p>
+              <p>NED</p>
+              <p style="color: red;">Innings Break</p>
+            </div>
+          </li>
+          <li class="splide__slide">
+            <div class="box">
+              <p>IND</p>
+              <p>South Africa</p>
+              <p style="color: #C37D01;">South Africa opt to bowl</p>
+            </div>
+          </li>
+          <li class="splide__slide">
+            <div class="box">
+              <p><b>MP</b> (341 -281)</p>
+              <p><b>BEN</b>-273 - 96(4)</p>
+              <p style="color: #C37D01;">Innings Break</p>
+            </div>
+          </li>
+          <li class="splide__slide">
+            <div class="box">
+              <p>ENG498-4 (50)</p>
+              <p>NED</p>
+              <p>Innings Break</p>
+            </div>
+          </li>
+          <li class="splide__slide">
+
+            <div class="box">
+              <p>ENG498-4 (50)</p>
+              <p>NED</p>
+              <p>Innings Break</p>
+            </div>
+          </li>
+          <li class="splide__slide">
+            <div class="box">
+              <p>ENG498-4 (50)</p>
+              <p>NED</p>
+              <p style="color: red;">Innings Break</p>
+            </div>
+      </div>
+  </div>
+  </li>
+
+  </div>
+  </li>
+  <li class="splide__slide">
+
+
+
+
+  </li>
+  <li class="splide__slide">
+
+
+
+
+  </li>
+  <li class="splide__slide">
+
+
+
+
+
+  </li>
+  </ul>
+  </div>
+  </section>
+  </div>
+
+
   <!----------------------- VAISHANVI START------------------------------- -->
 
   <!----------------------- VAISHANVI FINISH------------------------------- -->
@@ -672,3 +754,13 @@
 
 </html>
 <script src="homePage.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"></script>
+
+<script>
+  var splide = new Splide('.splide', {
+    perPage: 4,
+    rewind: true,
+  });
+
+  splide.mount();
+</script>
