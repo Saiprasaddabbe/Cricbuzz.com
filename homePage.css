@@ -1,389 +1,461 @@
                /* AMAN Start */
-        .head {
-            box-sizing: border-box;
-            background-color: #009270;
-            width: 80%;
-            margin: auto;
-            display: flex;
-            height: 55px;
-            align-items: center;
-            justify-content: space-evenly;
-        }
+               .head {
+                   box-sizing: border-box;
+                   background-color: #009270;
+                   width: 80%;
+                   margin: auto;
+                   display: flex;
+                   height: 55px;
+                   align-items: center;
+                   justify-content: space-evenly;
+               }
 
-        .head :hover {
-            cursor: pointer;
-        }
+               .head :hover {
+                   cursor: pointer;
+               }
 
-        .logo {
-            width: 12%;
-            margin-top: 5px;
-            margin-bottom: 5px;
+               .logo {
+                   width: 12%;
+                   margin-top: 5px;
+                   margin-bottom: 5px;
 
-            /* padding-top: 7px; */
-            padding-bottom: 10px;
-            padding-right: 10px;
+                   /* padding-top: 7px; */
+                   padding-bottom: 10px;
+                   padding-right: 10px;
 
-        }
+               }
 
-        li {
-            display: inline-block;
-        }
+               li {
+                   display: inline-block;
+               }
 
-        li>a,
-        .dropbtn {
-            margin-left: 10px;
-            padding-top: 15px;
-            padding-bottom: 22px;
-            padding-left: 5px;
-            padding-right: 5px;
+               li>a,
+               .dropbtn {
+                   margin-left: 10px;
+                   padding-top: 15px;
+                   padding-bottom: 22px;
+                   padding-left: 5px;
+                   padding-right: 5px;
 
-        }
+               }
 
-        .menu a {
-            color: #fff;
-            text-decoration: none;
-        }
+               .menu a {
+                   color: #fff;
+                   text-decoration: none;
+               }
 
-        .dropdown .dropbtn {
-            font-size: 16px;
-            color: white;
-            border: none;
-            background-color: transparent;
-        }
+               .dropdown .dropbtn {
+                   font-size: 16px;
+                   color: white;
+                   border: none;
+                   background-color: transparent;
+               }
 
-        .head a:hover {
-            background-color: #028062;
-            text-decoration: none;
-        }
+               .head a:hover {
+                   background-color: #028062;
+                   text-decoration: none;
+               }
 
-        .dropdown:hover {
-            background-color: #028062;
-        }
+               .dropdown:hover {
+                   background-color: #028062;
+               }
 
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            z-index: 1;
-        }
+               .dropdown-content {
+                   display: none;
+                   position: absolute;
+                   background-color: #f9f9f9;
+                   min-width: 160px;
+                   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                   z-index: 1;
+               }
 
-        .dropdown-content a {
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            text-align: left;
-        }
+               .dropdown-content a {
+                   color: black;
+                   padding: 12px 16px;
+                   text-decoration: none;
+                   display: block;
+                   text-align: left;
+               }
 
-        .dropdown-content a:hover {
-            background-color: #ddd;
-        }
+               .dropdown-content a:hover {
+                   background-color: #ddd;
+               }
 
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
+               .dropdown:hover .dropdown-content {
+                   display: block;
+               }
 
-        #CP {
-            font-size: 15px;
-            padding: 10px;
-            border-radius: 20px;
-            border: 1px solid white;
-            margin-top: 15px;
+               #CP {
+                   font-size: 15px;
+                   padding: 10px;
+                   border-radius: 20px;
+                   border: 1px solid white;
+                   margin-top: 15px;
 
-        }
+               }
 
-        .dropbtn {
-            display: flex;
-        }
+               .dropbtn {
+                   display: flex;
+               }
 
-        #search {
-            color: white;
-            margin-left: 10px;
+               #search {
+                   color: white;
+                   margin-left: 10px;
 
-        }
+               }
 
-        #profile {
-            margin-left: 10px;
-            color: white;
-            padding-right: 10px;
-        }
+               #profile {
+                   margin-left: 10px;
+                   color: white;
+                   padding-right: 10px;
+               }
 
-        /* AMAN end */
-        /* ---------------    SAIPRASAD         -------------------- */
+               /* AMAN end */
+               /* ---------------    SAIPRASAD         -------------------- */
 
-        body {
-            background-color: #E3E6E3;
-        }
+               body {
+                   background-color: #E3E6E3;
+               }
 
-        #navbar-black {
-            width: 80%;
-            margin: auto;
-            display: flex;
-            background-color: #4a4a4aba;
-            color: white;
-            justify-content: space-between;
-        }
+               #navbar-black {
+                   width: 80%;
+                   margin: auto;
+                   display: flex;
+                   background-color: #4a4a4aba;
+                   color: white;
+                   justify-content: space-between;
+               }
 
-        #tabs {
-            display: flex;
-        }
+               #tabs {
+                   display: flex;
+               }
 
-        #tabs>p {
-            padding: 8px 8px 8px 8px;
-            margin-top: 0px;
-            margin-bottom: 0px;
-            color: white;
-        }
+               #tabs>p {
+                   padding: 8px 8px 8px 8px;
+                   margin-top: 0px;
+                   margin-bottom: 0px;
+                   color: white;
+               }
 
-        #tabs>p:first-child {
-            background-color: #333333;
-        }
+               #tabs>p:first-child {
+                   background-color: #333333;
+               }
 
-        #tabs>p:hover,
-        #all:hover {
-            background-color: #333333c0;
-            cursor: pointer;
-            color: white;
-        }
+               #tabs>p:hover,
+               #all:hover {
+                   background-color: #333333c0;
+                   cursor: pointer;
+                   color: white;
+               }
 
-        #all {
-            padding: 10px 20px 0px 20px;
-            margin-top: 0px;
-            margin-bottom: 0px;
-            display: flex;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+               #all {
+                   padding: 10px 20px 0px 20px;
+                   margin-top: 0px;
+                   margin-bottom: 0px;
+                   display: flex;
+                   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
-        }
+               }
 
-        .btn {
-            height: 100px;
-            width: 80%;
-            background-color: #444444;
-            display: flex;
-            margin: auto;
-        }
+               .btn {
+                   height: 100px;
+                   width: 80%;
+                   background-color: #444444;
+                   display: flex;
+                   margin: auto;
+               }
 
-        .btn>button {
-            border: none;
-            border-radius: 20px;
-            background-color: #333333;
-            color: white;
-            height: 30px;
-            margin-left: 30px;
-            margin-top: 10px;
-            padding-bottom: 20px;
-            padding-top: 8px;
-            padding-left: 30px;
-            padding-right: 30px;
-        }
+               .btn>button {
+                   border: none;
+                   border-radius: 20px;
+                   background-color: #333333;
+                   color: white;
+                   height: 30px;
+                   margin-left: 30px;
+                   margin-top: 10px;
+                   padding-bottom: 20px;
+                   padding-top: 8px;
+                   padding-left: 30px;
+                   padding-right: 30px;
+               }
 
-        .btn>button:focus {
-            background-color: white;
-            color: black;
+               .btn>button:focus {
+                   background-color: white;
+                   color: black;
 
-        }
-
-
-
-
-        /* ------------------SAIPRASAD FINISH --------------------------------- */
-        /*----------------------- KUSHAGRA START---------------------------------------- */
-        #Lbox {
-            width: 15%;
-            display: grid;
-            grid-template-columns: repeat(1 1fr);
-            grid-template-rows: repeat(10 100px);
-            margin-left: 149px;
-            background-color: white;
-            margin-top: 8px;
-            padding-left: 8px;
-            padding-right: 10px;
-            height: fit-content;
-
-        }
-
-        #Lbox>div>p {
-            color: grey;
-        }
-
-        h3 {
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            color: #009270;
-        }
+               }
 
 
 
-        p {
-            font-size: 14px;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
-        }
 
-        i {
-            color: blue;
-        }
+               /* ------------------SAIPRASAD FINISH --------------------------------- */
+               /*----------------------- KUSHAGRA START---------------------------------------- */
+               #Lbox {
+                   width: 15%;
+                   display: grid;
+                   grid-template-columns: repeat(1 1fr);
+                   grid-template-rows: repeat(10 100px);
+                   margin-left: 149px;
+                   background-color: white;
+                   margin-top: 8px;
+                   padding-left: 8px;
+                   padding-right: 10px;
+                   height: fit-content;
 
-        /*The Photos Section...  */
-        #Lbox1 {
+               }
 
-            /* margin-top: 0px; */
-            width: 15%;
-            display: flex;
-            flex-direction: column;
-            /* grid-template-columns: repeat(1 1fr);
+               #Lbox>div>p {
+                   color: grey;
+               }
+
+               h3 {
+                   font-family: Verdana, Geneva, Tahoma, sans-serif;
+                   color: #009270;
+               }
+
+
+
+               p {
+                   font-size: 14px;
+                   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+               }
+
+               i {
+                   color: blue;
+               }
+
+               /*The Photos Section...  */
+               #Lbox1 {
+
+                   /* margin-top: 0px; */
+                   width: 15%;
+                   display: flex;
+                   flex-direction: column;
+                   /* grid-template-columns: repeat(1 1fr);
             grid-template-rows: repeat(6 200px);
             gap: 10px; */
-            margin-left: 149px;
-            background-color: white;
-            padding-left: 8px;
-            padding-right: 10px;
-            /* align-items: center;
+                   margin-left: 149px;
+                   background-color: white;
+                   padding-left: 8px;
+                   padding-right: 10px;
+                   /* align-items: center;
             height: fit-content; */
 
-            /* margin-top: 0px; */
+                   /* margin-top: 0px; */
 
 
-        }
-
-
-
-        #Lbox1>div>a {
-            color: black;
-        }
-
-
-        img {
-
-            margin-left: 26px;
-            border-radius: 10px;
-            margin-top: 15px;
-
-        }
-
-        img+p {
-
-            margin: auto;
-            text-align: center;
-            color: black;
-        }
-
-        p+h5 {
-            text-align: center;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        /* Schedule Section */
-        #Lbox2 {
-            width: 15%;
-            margin-top: 8px;
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            grid-template-rows: repeat(12, 120px);
-            margin-left: 149px;
-            background-color: white;
-            text-align: center;
-            padding-left: 8px;
-            padding-right: 10px;
-
-
-        }
-
-        #Lbox2>p {
-            font-size: 14px;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            text-align: center;
-        }
-
-        i {
-            color: blue;
-        }
-
-        a {
-            text-decoration: none;
-            color: black;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
+               }
 
 
 
-
-        /*----------------------- KUSHAGRA finish---------------------------------------- */
-        /*----------------------- pankaj finish---------------------------------------- */
-        #mainPage {
-            width: 30%;
-            justify-content: center;
-            align-items: center;
-            margin-top: 10px;
-            padding-right: 20px;
-            padding-left: 20px;
-            height: 1515px;
-
-        }
-
-        #crd-cntxt {
-            font-size: 12px;
-            color: #666;
-            padding-bottom: 10px;
-            display: block;
-
-        }
-
-        body {
-            /* background: #E3E6E3; */
-            font-family: helvetica, "Segoe UI", Arial, sans-serif;
-            color: #222;
-            font-size: 14px;
-            line-height: 1.5;
-            margin: 0;
-        }
-
-        #card1,
-        #card2,
-        #card3,
-        #card4,
-        #card5,
-        #card6 {
-            margin-top: 0px;
-            background-color: white;
-            width: 500px;
-            padding-left: 5px;
-            padding-right: 50px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            /* text-align: center; */
-            padding-left: 20px;
-
-        }
+               #Lbox1>div>a {
+                   color: black;
+               }
 
 
-        #BODY {
-            display: flex;
-            /* grid-template-columns: repeat(3, 200px);
+               img {
+
+                   margin-left: 26px;
+                   border-radius: 10px;
+                   margin-top: 15px;
+
+               }
+
+               img+p {
+
+                   margin: auto;
+                   text-align: center;
+                   color: black;
+               }
+
+               p+h5 {
+                   text-align: center;
+                   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+               }
+
+               /* Schedule Section */
+               #Lbox2 {
+                   width: 15%;
+                   margin-top: 8px;
+                   display: grid;
+                   grid-template-columns: repeat(1, 1fr);
+                   grid-template-rows: repeat(12, 120px);
+                   margin-left: 149px;
+                   background-color: white;
+                   text-align: center;
+                   padding-left: 8px;
+                   padding-right: 10px;
+
+
+               }
+
+               #Lbox2>p {
+                   font-size: 14px;
+                   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                   text-align: center;
+               }
+
+               i {
+                   color: blue;
+               }
+
+               a {
+                   text-decoration: none;
+                   color: black;
+               }
+
+               a:hover {
+                   text-decoration: underline;
+               }
+
+
+
+
+               /*----------------------- KUSHAGRA finish---------------------------------------- */
+               /*----------------------- pankaj finish---------------------------------------- */
+               #mainPage {
+                   width: 30%;
+                   justify-content: center;
+                   align-items: center;
+                   margin-top: 10px;
+                   padding-right: 20px;
+                   padding-left: 20px;
+                   height: 1515px;
+
+               }
+
+               #crd-cntxt {
+                   font-size: 12px;
+                   color: #666;
+                   padding-bottom: 10px;
+                   display: block;
+
+               }
+
+               body {
+                   /* background: #E3E6E3; */
+                   font-family: helvetica, "Segoe UI", Arial, sans-serif;
+                   color: #222;
+                   font-size: 14px;
+                   line-height: 1.5;
+                   margin: 0;
+               }
+
+               #card1,
+               #card2,
+               #card3,
+               #card4,
+               #card5,
+               #card6 {
+                   margin-top: 0px;
+                   background-color: white;
+                   width: 500px;
+                   padding-left: 5px;
+                   padding-right: 50px;
+                   display: flex;
+                   flex-direction: column;
+                   justify-content: center;
+                   /* text-align: center; */
+                   padding-left: 20px;
+
+               }
+
+
+               #BODY {
+                   display: flex;
+                   /* grid-template-columns: repeat(3, 200px);
             grid-template-rows: repeat(3, auto); */
-        }
+               }
 
-        #ads {
-            margin-left: 130px;
-            background-color: white;
-            margin-top: 10px;
-            width: 340px;
+               #ads {
+                   margin-left: 130px;
+                   background-color: white;
+                   margin-top: 10px;
+                   width: 340px;
 
-        }
+               }
 
-        #ads>h3 {
-            margin-left: 20px;
-        }
-
-
-        /*----------------------- pakaj finish---------------------------------------- */
-        /* SHAD ATIF START */
-        /* SHAD ATIF START */
-        /*----------------------- VAISHANVI start---------------------------------------- */
+               #ads>h3 {
+                   margin-left: 20px;
+               }
 
 
-        /*----------------------- VAishanvi finish---------------------------------------- */
+               /*----------------------- pakaj finish---------------------------------------- */
+               /* SHAD ATIF START */
+
+
+               .footer {
+                   background-color: #4A4A4A;
+
+               }
+
+               .row {
+                   display: flex;
+                   justify-content: space-around;
+
+               }
+
+
+               .container {
+                   max-width: 1170px;
+
+               }
+
+               .footer {
+                   width: 100%;
+                   padding: 25px;
+                   position: relative;
+                   margin-top: 500px;
+               }
+
+               .footer h4 {
+                   font-size: 20px;
+                   color: #ffffff;
+                   text-transform: capitalize;
+                   margin-bottom: 30px;
+                   font-weight: 500;
+                   position: relative;
+                   margin-right: 30px;
+
+
+               }
+
+               .height {
+                   height: 200px;
+                   width: 100px;
+                   margin-top: 0px;
+               }
+
+               .para {
+                   color: #bbbbbb;
+                   display: flex;
+                   justify-content: space-around;
+                   align-items: center;
+                   font-size: 15px;
+               }
+
+               @media(max-width: 767px) {
+                   .footer-col {
+                       width: 50%;
+                       margin-bottom: 30px;
+                   }
+               }
+
+               @media(max-width: 767px) {
+                   .footer-col {
+                       width: 100%;
+                   }
+               }
+
+
+
+               .footer p a {
+                   color: white;
+                   text-transform: capitalize;
+               }
+
+               /* SHAD ATIF START */
+               /*----------------------- VAISHANVI start---------------------------------------- */
+
+
+               /*----------------------- VAishanvi finish---------------------------------------- */
