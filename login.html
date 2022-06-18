@@ -34,7 +34,7 @@
       }
       #nav p {
         margin-left: 20px;
-        text-decoration:underline;
+        text-decoration: underline;
       }
       #nav > img {
         width: 120px;
@@ -43,68 +43,66 @@
         background-size: cover;
         margin-left: 1170px;
       }
-      #nav{
+      #nav {
         border: 1px solid rgb(241, 232, 232);
       }
-      .tacbox>input, .tacbox>label {
+      .tacbox > input,
+      .tacbox > label {
         display: inline;
         width: 90%;
       }
-      .tacbox>input{
+      .tacbox > input {
         margin-left: -140px;
       }
-      .tacbox>label{
-        margin-left:-130px;
+      .tacbox > label {
+        margin-left: -130px;
       }
 
-      #main{
-            margin: auto;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 450px;
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-            height: 470px;
-            padding: 30px;
-            margin-top: 20px;
-            border-radius: 20px;
-            line-height: 40px;
-            
-        }
-        input{
-            margin-bottom: 20px;
-            width: 85%;
-            height: 30px;
-            border-radius: 10px;
-            border: 1px solid grey;
-            font-size: 20px;
-            padding: 5px;
-        }
-        h2{
-
-            text-align: center;
-        }
-        button{
-            width: 90%;
-            border-radius: 10px;
-            height: 30px;
-            padding: 20px;
-            padding-bottom: 35px;
-            font-size: 20px;
-            font-weight: bold;
-            border: none;
-        }
-        form{
-            margin-left: 20px;
-            margin-bottom: 30px;
-        }
-        form>h1{
-text-align: center;
-        }
-        form>p{
-         
-            padding-left: 20px;
-        }
+      #main {
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 450px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        height: 470px;
+        padding: 30px;
+        margin-top: 20px;
+        border-radius: 20px;
+        line-height: 40px;
+      }
+      input {
+        margin-bottom: 20px;
+        width: 85%;
+        height: 30px;
+        border-radius: 10px;
+        border: 1px solid grey;
+        font-size: 20px;
+        padding: 5px;
+      }
+      h2 {
+        text-align: center;
+      }
+      button {
+        width: 90%;
+        border-radius: 10px;
+        height: 30px;
+        padding: 20px;
+        padding-bottom: 35px;
+        font-size: 20px;
+        font-weight: bold;
+        border: none;
+      }
+      form {
+        margin-left: 20px;
+        margin-bottom: 30px;
+      }
+      form > h1 {
+        text-align: center;
+      }
+      form > p {
+        padding-left: 20px;
+      }
     </style>
   </head>
   <body>
@@ -115,7 +113,7 @@ text-align: center;
     </div>
     <div id="bottom">
       <div id="nav">
-        <p> <a href="homePage.html">  Home ></a></p>
+        <p><a href="homePage.html"> Home ></a></p>
         <h3>Account</h3>
         <img
           src="https://www.cricbuzz.com/images/cb_logo_plus_color.svg"
@@ -136,24 +134,36 @@ text-align: center;
     </div>
   </body>
   <script>
-       document.querySelector("form").addEventListener("submit", inputData);
+    let form = document.querySelector("form");
 
-function  inputData() {
-  let array = JSON.parse(localStorage.getItem("aman"));
-  let email = document.querySelector("#email").value;
-  let password = document.querySelector("#pass").value;
+    let array = JSON.parse(localStorage.getItem("aman")) || [];
 
-  let res = false;
-  for (let i = 0; i < array.length; i++) {
-    if (array[i].email === email && array[i].password === password) {
-      res = true;
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+      let data = {
+        email: document.querySelector("#email").value,
+        password: document.querySelector("#pass").value,
+      };
+
+      if (checkfun(data.email, data.password) === true) {
+        localStorage.setItem("yadav", JSON.stringify(data));
+        alert("Login Successful");
+        window.location.href = "homePage.html";
+      } else {
+        alert("Wrong Username or Password");
+      }
+    });
+
+    function checkfun(mail, pass) {
+      let filtered = array.filter(function (elem) {
+        return elem.email === mail && elem.password === pass;
+      });
+
+      if (filtered.length > 0) {
+        return true;
+      } else {
+        return false;
+      }
     }
-  }
-  if (res) {
-    alert("login Successful");
-  } else {
-    alert("Wrong input Credentials");
-  }
-}
   </script>
 </html>
