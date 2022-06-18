@@ -1,8 +1,10 @@
 #Mbody {
     border: 1px solid red;
-    width: 70%;
+    width: 80%;
     height: 3700px;
     margin: auto;
+    display: flex;
+    flex-direction: row;
 }
 
 #nav1 {
@@ -130,6 +132,7 @@ h2 {
 
 
 
+
 }
 
 #adv2>div {
@@ -149,6 +152,8 @@ h4 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: teal;
 }
+
+
 
 #adv3 {
     border: 1px solid orange;
@@ -230,7 +235,7 @@ a {
     color: red;
 }
 
-/* header-navbar start */
+/*<------------------------------------------ header-navbar start here------------------>*/
 .head {
 
     box-sizing: border-box;
@@ -450,4 +455,13 @@ body {
 
 }
 
-/* header-navbar end */
+/* <-------------------------------------------header-navbar end ------------------------------------------------->*/
+#left {
+    display: inline;
+    border: 5px solid brown;
+
+}
+
+#allAdv {
+    display: inline;
+}
