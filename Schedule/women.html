@@ -5,76 +5,475 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <style>
-        h1{
+        body{
+            width: 80%;
+            margin: auto;
+        }
+         #schedule >h1{
             font-style: sans-serif;
             font-family: helvetica,"Segoe UI",Arial,sans-serif
         }
-        button {
+        #schedule > button {
             border-radius: 10px;
             margin-right: 30px;
             padding: 5px 25px;
-            background-color: rgb(195, 242, 195);
+            background-color:rgb(195, 242, 195);;
             border: transparent;
+
             font-style: sans-serif;
-            font-family: helvetica,"Segoe UI",Arial,sans-serif;
-            cursor: pointer;
+            font-family: helvetica,"Segoe UI",Arial,sans-serif
         }
-        table{
+        #schedule > table{
             margin-top: 50px;
             width: 100%;
             text-align: start;
             font-style: sans-serif;
             font-family: helvetica,"Segoe UI",Arial,sans-serif
         }
-        thead {
+         #schedule > table >thead {
             text-align: start;
             background-color:  #bcb0b0;
         
         }
-        th{
+        .th{
             text-align: start;
             padding: 5px;
             
         }
-        .style{
+        #schedule > .style{
         border: 1px solid;
         background-color: darkgreen;
         color:white;
       }
+
+      .head {
+     box-sizing: border-box;
+     background-color: #009270;
+     width: 100%;
+     margin: auto;
+     display: flex;
+     /* height: 55px; */
+     align-items: center;
+     justify-content: space-evenly;
+ }
+
+ .head :hover {
+     cursor: pointer;
+ }
+
+ .logo {
+     width: 12%;
+     margin-top: 5px;
+     margin-bottom: 5px;
+
+     /* padding-top: 7px; */
+     padding-bottom: 10px;
+     padding-right: 10px;
+
+ }
+
+ li {
+     display: inline-block;
+ }
+
+ li>a,
+ .dropbtn {
+     margin-left: 10px;
+     padding-top: 15px;
+     padding-bottom: 22px;
+     padding-left: 5px;
+     padding-right: 5px;
+
+ }
+
+ .menu a {
+     color: #fff;
+     text-decoration: none;
+ }
+
+ .dropdown .dropbtn {
+     font-size: 16px;
+     color: white;
+     border: none;
+     background-color: transparent;
+ }
+
+ .head a:hover {
+     background-color: #028062;
+     text-decoration: none;
+ }
+
+ .dropdown:hover {
+     background-color: #028062;
+ }
+
+ .dropdown-content {
+     display: none;
+     position: absolute;
+     background-color: #f9f9f9;
+     min-width: 160px;
+     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+     z-index: 1;
+ }
+
+ .dropdown-content a {
+     color: black;
+     padding: 12px 16px;
+     text-decoration: none;
+     display: block;
+     text-align: left;
+ }
+
+ .dropdown-content a:hover {
+     background-color: #ddd;
+ }
+
+ .dropdown:hover .dropdown-content {
+     display: block;
+ }
+
+ #CP {
+     font-size: 15px;
+     padding: 10px;
+     border-radius: 20px;
+     border: 1px solid white;
+     margin-top: 15px;
+
+ }
+
+ .dropbtn {
+     display: flex;
+ }
+
+ #search {
+     color: white;
+     margin-left: 10px;
+
+ }
+
+ #profile {
+     margin-left: 10px;
+     color: white;
+     padding-right: 10px;
+ }
+
+ /* AMAN end */
+ /* ---------------    SAIPRASAD         -------------------- */
+
+ body {
+     background-color: #E3E6E3;
+ }
+
+ #navbar-black {
+     width: 100%;
+     margin: auto;
+     display: flex;
+     background-color: #4a4a4aba;
+     color: white;
+     justify-content: space-between;
+     margin-bottom: 20px;
+ }
+
+ #tabs {
+     display: flex;
+ }
+
+ #tabs>p {
+     padding: 8px 8px 8px 8px;
+     margin-top: 0px;
+     margin-bottom: 0px;
+     color: white;
+ }
+
+ #tabs>p:first-child {
+     background-color: #333333;
+ }
+
+ #tabs>p:hover,
+ #all:hover {
+     background-color: #333333c0;
+     cursor: pointer;
+     color: white;
+ }
+
+ #all {
+     padding: 10px 20px 0px 20px;
+     margin-top: 0px;
+     margin-bottom: 0px;
+     display: flex;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+ }
+
+ .btn {
+     height: 100px;
+     width: 80%;
+     background-color: #444444;
+     display: flex;
+     margin: auto;
+ }
+
+ .btn>button {
+     border: none;
+     border-radius: 20px;
+     background-color: #333333;
+     color: white;
+     height: 30px;
+     margin-left: 30px;
+     margin-top: 10px;
+     padding-bottom: 20px;
+     padding-top: 8px;
+     padding-left: 30px;
+     padding-right: 30px;
+ }
+
+ .btn>button:focus {
+     background-color: white;
+     color: black;
+
+ }
+
     
-      
-      
+       
+
+     
     </style>
     
 </head>
 <body>
+    <div id="HEADER">
+        <!-- AMAN START -->
+        <div class="head">
+          <div class="logo">
+            <img src="https://www.cricbuzz.com/images/cb_logo.svg" alt="error" />
+          </div>
+          <div class="menu">
+            <ul style="padding-left: 0px;">
+              <li><a href="/Cricbuzz/livescores.html">Live Scores</a></li>
+              <li><a href="/Cricbuzz/Schedule/international.html">Schedule</a></li>
+              <li><a href="#">Archives</a></li>
+              <li>
+                <div class="dropdown">
+                  <button class="dropbtn">
+                    News<span class="material-symbols-outlined">
+                      <!-- arrow_drop_down -->
+                    </span>
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="#">All Stories</a>
+                    <a href="#">Cricbuzz Plus</a>
+                    <a href="#">Latest News</a>
+                    <a href="#">Topics</a>
+                    <a href="#">Spotlight</a>
+                    <a href="#">Opinions</a>
+                    <a href="#">Specials</a>
+                    <a href="#">Stats & Analysis</a>
+                    <a href="#">Interviews</a>
+                    <a href="#">Live Blogs</a>
+                    <a href="#">Harsha Bhogle</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="dropdown">
+                  <button class="dropbtn">
+                    Series<span class="material-symbols-outlined">
+                      <!-- arrow_drop_down -->
+                    </span>
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="#">South Africa tour of India, 2022</a>
+                    <a href="#">Australia tour of Sri Lanka, 2022</a>
+                    <a href="#">New Zealand tour of England, 2022</a>
+                    <a href="#">Bangladesh tour of West Indies, 2022</a>
+                    <a href="#">England tour of Netherlands, 2022</a>
+                    <a href="#">T20 Blast 2022</a>
+                    <a href="#">Ranji Trophy 2021-2022</a>
+                    <a href="#">ICC Cricket World Cup League Two 2019-23</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="dropdown">
+                  <button class="dropbtn">
+                    Teams<span class="material-symbols-outlined">
+                      <!-- arrow_drop_down -->
+                    </span>
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <table>
+                      <thead>
+                        <th>TEST TEAMS</th>
+                        <th>ASSOCIATE</th>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>India</td>
+                          <td>Italy</td>
+                        </tr>
+                        <tr>
+                          <td>Ireland</td>
+                          <td>Botswana</td>
+                        </tr>
+                        <tr>
+                          <td>Pakistan</td>
+                          <td>Belgium</td>
+                        </tr>
+                        <tr>
+                          <td>Australia</td>
+                          <td>Iran</td>
+                        </tr>
+                        <tr>
+                          <td>Sri Lanka</td>
+                          <td>Denmark</td>
+                        </tr>
+                        <tr>
+                          <td>Bangladesh</td>
+                          <td>Singapore</td>
+                        </tr>
+                        <tr>
+                          <td>England</td>
+                          <td>Namibia</td>
+                        </tr>
+                        <tr>
+                          <td>West Indies</td>
+                          <td>Uganda</td>
+                        </tr>
+                        <tr>
+                          <td>South Africa</td>
+                          <td>Malaysia</td>
+                        </tr>
+                        <tr>
+                          <td>Zimbabwe</td>
+                          <td>Nepal</td>
+                        </tr>
+                        <tr>
+                          <td>New Zealand</td>
+                          <td>Germany</td>
+                        </tr>
+                        <tr>
+                          <td>Afghanistan</td>
+                          <td>Canada</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="dropdown">
+                  <button class="dropbtn">
+                    Videos<span class="material-symbols-outlined">
+                      <!-- arrow_drop_down -->
+                    </span>
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="#">All Vedios</a>
+                    <a href="#">Categories</a>
+                    <a href="#">Playlists</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="dropdown">
+                  <button class="dropbtn">
+                    Rankings<span class="material-symbols-outlined">
+                      <!-- arrow_drop_down -->
+                    </span>
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="#">ICC Rankings-Men</a>
+                    <a href="#">ICC Rankings-Women</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="dropdown">
+                  <button class="dropbtn">
+                    More<span class="material-symbols-outlined">
+                      <!-- arrow_drop_down -->
+                    </span>
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="#">World Test Championship</a>
+                    <a href="#">World Cup Super League</a>
+                    <a href="#">Quiz</a>
+                    <a href="#">Photos</a>
+                    <a href="#">Mobile Apps</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Contact Us</a>
+                  </div>
+                </div>
+              </li>
+              <button id="CP">
+              <a style=" color: black;" href="cricbuzz plus/pluspage.html">Cricbuzz Plus</a>
+              </button>
+            </ul>
+          </div>
+          <div id="search">
+    
+            <span class="material-symbols-outlined">
+              search
+            </span>
+          </div>
+          <a href="Signup.html">
+            <div id="profile">
+              <span class="material-symbols-outlined">
+                account_circle
+              </span>
+            </div>
+          </a>
+        </div>
+        <!-- AMAN START -->
+        <!-- /* ------------------SAIPRASAD  --------------------------------- */ -->
+        <div id="navbar-black">
+          <div id="tabs">
+            <p>MATCHES</p>
+            <p>NZ vs ENG-Stumps</p>
+            <p>MP vs BEN-Live</p>
+            <p>IND vs RSA-Preview</p>
+            <p>SL vs AUS-Preview</p>
+            <p>Zim vs AFG-Preview</p>
+          </div>
+          <div id="all"><span>ALL</span>
+            <div><span class="material-symbols-outlined">
+                <!-- arrow_drop_down -->
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /* ------------------SAIPRASAD FINISH --------------------------------- */ -->
+    <div id="schedule">
     <h1>Cricket Schedule</h1>
-    <button>International</button>
-    <button>Domestic & Others</button>
+    <button >International</button>
+    <button >Domestic & Others</button>
     <button>T20 League</button>
-    <button class="style">Women</button>
+    <button  class="style">Women</button>
 
     <table>
         <thead>
-            <th>Month</th>
-            <th>Series Name</th>
+            <th class="th">Month</th>
+            <th class="th">Series Name</th>
         </thead>
         <tbody>
-            <!-- <tr>
-                <td>
-                    August 2019
-                </td>
-                <td>ICC Cricket World Cup League Two 2019-23
-                    Aug 14 - Aug 21</td>
-            </tr> -->
-           
+          
         </tbody>
     </table>
+    </div>
 </body>
 </html>
 <script>
-    let btn = document.querySelectorAll("button")
+    let btn = document.querySelectorAll("#schedule >button")
 
     for(let i=0;i<btn.length;i++){
         btn[0].addEventListener("click", pageChange)
@@ -204,7 +603,7 @@ let line =document.createElement("hr")
 tr2.append(td3)
 
 
-document.querySelector("tbody").append(tr1,tr2)
+document.querySelector("#schedule > table > tbody").append(tr1,tr2)
 
 
  });
