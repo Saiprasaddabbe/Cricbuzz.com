@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            font-style: sans-serif;
+            font-family: helvetica,"Segoe UI",Arial,sans-serif
+        }
+        button {
+            border-radius: 10px;
+            margin-right: 30px;
+            padding: 5px 25px;
+            background-color: rgb(195, 242, 195);
+            border: transparent;
+            font-style: sans-serif;
+            font-family: helvetica,"Segoe UI",Arial,sans-serif
+        }
+        table{
+            margin-top: 50px;
+            width: 100%;
+            text-align: start;
+            font-style: sans-serif;
+            font-family: helvetica,"Segoe UI",Arial,sans-serif
+        }
+        thead {
+            text-align: start;
+            background-color:  #bcb0b0;
+        
+        }
+        th{
+            text-align: start;
+            padding: 5px;
+            
+        }
+        .style{
+        border: 1px solid;
+        background-color: darkgreen;
+        color:white;
+      }
+    
+        
+
+       
+    </style>
+    
+</head>
+<body>
+    <h1>Cricket Schedule</h1>
+    <button>International</button>
+    <button>Domestic & Others</button>
+    <button class="style">T20 League</button>
+    <button>Women</button>
+
+    <table>
+        <thead>
+            <th>Month</th>
+            <th>Series Name</th>
+        </thead>
+        <tbody>
+            <!-- <tr>
+                <td>
+                    August 2019
+                </td>
+                <td>ICC Cricket World Cup League Two 2019-23
+                    Aug 14 - Aug 21</td>
+            </tr> -->
+           
+        </tbody>
+    </table>
+</body>
+</html>
+<script>
+    let btn = document.querySelectorAll("button")
+
+    for(let i=0;i<btn.length;i++){
+        btn[0].addEventListener("click", pageChange)
+        btn[1].addEventListener("click", pageChange1)
+        btn[2].addEventListener("click", pageChange2)
+        btn[3].addEventListener("click", pageChange3)
+    }
+
+    function pageChange(event){
+        btn[0].style.backgroundColor= "#004d40"
+        btn[0].style.color="white"
+        location.href="international.html"
+    }
+
+    function pageChange1(event){
+        btn[1].style.backgroundColor= "#004d40"
+        btn[1].style.color="white"
+        location.href="domestic.html"
+    }
+    function pageChange2(event){
+        btn[2].style.backgroundColor= "#004d40"
+        btn[2].style.color="white"
+        location.href="t20.html"
+    }
+    function pageChange3(event){
+        btn[3].style.backgroundColor= "#004d40"
+        btn[3].style.color="white"
+        location.href="women.html"
+    }
+
+
+    IntArr=[
+       
+        {
+            month: "May 2022",
+            series:"T20 Blast 2022" ,
+            date: "May 25 - Jun 16",
+
+        },
+        {
+            month: "June 2022",
+            series:"Tamil Nadu Premier League 2022" ,
+            date: "Jun 23 - Jul 31",
+            
+        },
+       
+        {month :  "August 2022",
+        series:"The Hundred Mens Compeitition 2022",
+        date: " Aug 03 - Sep 03", },
+
+       
+    ]
+
+
+ IntArr.forEach(function(elem){
+let tr1 = document.createElement("tr");
+
+let td1= document.createElement("td");
+td1.innerText= elem.month;
+td1.style.textAlign="start"
+td1.style.verticalAlign="top"
+
+td1.rowSpan="2"
+td1.style.fontWeight="bold";
+
+let td2= document.createElement("td");
+td2.innerText= elem.series;
+
+tr1.append(td1,td2)
+
+
+let tr2 = document.createElement("tr");
+let td3= document.createElement("td");
+td3.innerText= elem.date;
+td3.style.color="grey"
+td3.style.fontSize="14px"
+td3.style.border="1px"
+
+let line =document.createElement("hr")
+tr2.append(td3)
+
+
+document.querySelector("tbody").append(tr1,tr2)
+
+
+ });
+
+
+    
+</script>
