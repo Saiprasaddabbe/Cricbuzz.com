@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      table{
+        width: 100%;
+      
+      }
+
+      button {
+            border-radius: 10px;
+            margin-right: 30px;
+            padding: 5px 25px;
+            background-color:  rgb(195, 242, 195);
+            border: transparent;
+            font-style: sans-serif;
+            font-family: helvetica,"Segoe UI",Arial,sans-serif
+      }
+
+      .style{
+        border: 1px solid;
+        background-color: darkgreen;
+        color:white;
+      }
+    
+      
+      
+
+      
+   
+    </style>
+</head>
+<body>
+  <h1>Cricket Schedule</h1>
+    <button class="style">All Matches</button>
+    <button>International</button>
+    <button>Domestic & Others</button>
+    <button class="current">T20 League</button>
+    <button>Women</button>
+
+    <div class="heading">
+
+    </div>
+    <table >
+        <tbody>
+        </tbody>
+    </table>
+    
+</body>
+</html>
+<script>
+    ScheduleArr=[
+    {date :  "WED JUNE 15 2022",
+    series :"South Africa tour of India, 2022",
+    match : "India vs South Africa, 4th T20I",
+    venue : "Saurashtra Cricket Association Stadium, Rajkot",
+    time: "7:00 PM",
+    conversion: "01:30 PM GMT / 07:00 PM LOCAL"
+  },
+  { 
+    series :"Bangladesh tour of West Indies, 2022",
+    match : "West Indies vs Bangladesh, 1st Test, Day 2",
+    venue : "Sir Vivian Richards Stadium, North Sound, Antigua",
+    time: "7:30 PM",
+    conversion: "02:00 PM GMT / 11:00 AM LOCAL"
+  },
+  { 
+    series :"T20 Blast 2022",
+    match : "Northamptonshire vs Lancashire, North Group",
+    venue : "County Ground, Northampton",
+    time: "11:00 PM",
+    conversion: "05:30 PM GMT / 06:30 PM LOCAL"
+  },
+  { 
+    match : "Somerset vs Gloucestershire, South Group",
+    venue : "The Cooper Associates County Ground, Taunton",
+    time: "11:00 PM",
+    conversion: "05:30 PM GMT / 06:30 PM LOCAL"
+  
+  },
+  { 
+    match : "Lancashire vs Durham, North Group",
+    venue : "The Cooper Associates County Ground, Taunton",
+    time: "11:00 PM",
+    conversion: "05:30 PM GMT / 06:30 PM LOCAL"
+  
+  },
+  { 
+    match : "Glamorgan vs Middlesex, South Group",
+    venue : "Sophia Gardens, Cardiff",
+    time: "11:00 PM",
+    conversion: "05:30 PM GMT / 06:30 PM LOCAL"
+  
+  },
+  { 
+    match : "Surrey vs Somerset, South Group",
+    venue : "Kennington Oval, London",
+    time: "11:00 PM",
+    conversion: "05:30 PM GMT / 06:30 PM LOCAL"
+  
+  },
+  { 
+    match : "Kent vs Gloucestershire, South Group",
+    venue : "The Cooper Associates County Ground, Taunton",
+    time: "11:00 PM",
+    conversion: "05:30 PM GMT / 06:30 PM LOCAL"
+  
+  },
+  { 
+    match : "Derbyshire vs Northamptonshire, North Group",
+    venue : "County Ground, Derby",
+    time: "11:00 PM",
+    conversion: "05:30 PM GMT / 06:30 PM LOCAL"
+  
+  },
+  
+  
+ ]
+ ScheduleArr.forEach(function(elem){
+  
+  let matchDate= document.createElement("h4")
+  matchDate.innerText = elem.date || null 
+  if ( matchDate.innerText == elem.date)
+  {matchDate.style.backgroundColor="#e0e0e0"
+   matchDate.style.padding="10px"}
+
+ 
+  document.querySelector(".heading").append(matchDate)
+  
+  
+  let tr1 = document.createElement("tr");
+
+let td1= document.createElement("td");
+td1.innerText= elem.series || null
+
+td1.rowSpan="2"
+td1.style.fontWeight="bold";
+td1.width="35%"
+td1.style.verticalAlign="top";
+td1.style.marginBottom="400px";
+// td1.style.paddingBottom="30px"
+
+
+
+let td2= document.createElement("td");
+td2.innerText= elem.match;
+
+let td3= document.createElement("td")
+td3.innerText= elem.time;
+
+tr1.append(td1,td2,td3)
+tr1.style.fontSize= "18px"
+
+
+
+let tr2 = document.createElement("tr");
+
+let td4= document.createElement("td");
+td4.innerText= elem.venue;
+
+
+let td5= document.createElement("td");
+td5.innerText= elem.conversion;
+td5.style.marginBottom="50px"
+
+tr2.append(td4,td5)
+tr2.style.color="grey";
+tr2.style.fontSize="14px"
+
+
+document.querySelector("tbody").append(tr1,tr2)
+
+ 
+
+})
+
+
+</script>
