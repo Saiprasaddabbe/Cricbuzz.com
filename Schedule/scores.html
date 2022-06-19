@@ -254,7 +254,7 @@
             <div class="dropdown">
               <button class="dropbtn">
                 News<span class="material-symbols-outlined">
-                  <!-- arrow_drop_down -->
+                  arrow_drop_down
                 </span>
                 <i class="fa fa-caret-down"></i>
               </button>
@@ -277,7 +277,7 @@
             <div class="dropdown">
               <button class="dropbtn">
                 Series<span class="material-symbols-outlined">
-                  <!-- arrow_drop_down -->
+                  arrow_drop_down
                 </span>
                 <i class="fa fa-caret-down"></i>
               </button>
@@ -297,7 +297,7 @@
             <div class="dropdown">
               <button class="dropbtn">
                 Teams<span class="material-symbols-outlined">
-                  <!-- arrow_drop_down -->
+                  arrow_drop_down
                 </span>
                 <i class="fa fa-caret-down"></i>
               </button>
@@ -365,7 +365,7 @@
             <div class="dropdown">
               <button class="dropbtn">
                 Videos<span class="material-symbols-outlined">
-                  <!-- arrow_drop_down -->
+                  arrow_drop_down
                 </span>
                 <i class="fa fa-caret-down"></i>
               </button>
@@ -380,7 +380,7 @@
             <div class="dropdown">
               <button class="dropbtn">
                 Rankings<span class="material-symbols-outlined">
-                  <!-- arrow_drop_down -->
+                  arrow_drop_down
                 </span>
                 <i class="fa fa-caret-down"></i>
               </button>
@@ -394,7 +394,7 @@
             <div class="dropdown">
               <button class="dropbtn">
                 More<span class="material-symbols-outlined">
-                  <!-- arrow_drop_down -->
+                  arrow_drop_down
                 </span>
                 <i class="fa fa-caret-down"></i>
               </button>
@@ -451,8 +451,9 @@
   <div id="score">
 
   <h1>Cricket Schedule</h1>
-  <button id="sec">Current & Future Series</button>
   <button id="sec" class="style">Match By Day</button>
+  <button id="sec">Current & Future Series</button>
+  
   <br>
   <hr>
     <button class="style">All Matches</button>
@@ -598,7 +599,8 @@ document.querySelector("#score > table > tbody").append(tr1,tr2)
 
 })
 
-let buttondocument.querySelectorAll("#sec").addEventListener("click" ,change)
+let button= document.querySelectorAll("#sec")
+button[1].addEventListener("click" ,change)
 
 function change(event){
   location.href= "international.html"
