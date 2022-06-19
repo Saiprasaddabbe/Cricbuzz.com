@@ -1,563 +1,563 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet"
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="homePage.css">
-    <link rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/themes/splide-skyblue.min.css">
-  
-    <style>
-        body{
-            width: 80%;
-            margin: auto;
-        }
-       
+  <link rel="stylesheet" href="homePage.css">
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/themes/splide-skyblue.min.css">
 
-.head {
-     box-sizing: border-box;
-     background-color: #009270;
-     width: 100%;
-     margin: auto;
-     display: flex;
-     /* height: 55px; */
-     align-items: center;
-    
- }
+  <style>
+    body {
+      width: 80%;
+      margin: auto;
+    }
 
- .head :hover {
-     cursor: pointer;
- }
 
- .logo {
-     width: 12%;
-     margin-top: 5px;
-     margin-bottom: 5px;
+    .head {
+      box-sizing: border-box;
+      background-color: #009270;
+      width: 100%;
+      margin: auto;
+      display: flex;
+      /* height: 55px; */
+      align-items: center;
 
-     /* padding-top: 7px; */
-     padding-bottom: 10px;
-     padding-right: 10px;
+    }
 
- }
+    .head :hover {
+      cursor: pointer;
+    }
 
- li {
-     display: inline-block;
- }
+    .logo {
+      width: 12%;
+      margin-top: 5px;
+      margin-bottom: 5px;
 
- li>a,
- .dropbtn {
-     margin-left: 10px;
-     padding-top: 15px;
-     padding-bottom: 22px;
-     padding-left: 5px;
-     padding-right: 5px;
+      /* padding-top: 7px; */
+      padding-bottom: 10px;
+      padding-right: 10px;
 
- }
+    }
 
- .menu a {
-     color: #fff;
-     text-decoration: none;
- }
+    li {
+      display: inline-block;
+    }
 
- .dropdown .dropbtn {
-     font-size: 16px;
-     color: white;
-     border: none;
-     background-color: transparent;
- }
+    li>a,
+    .dropbtn {
+      margin-left: 10px;
+      padding-top: 15px;
+      padding-bottom: 22px;
+      padding-left: 5px;
+      padding-right: 5px;
 
- .head a:hover {
-     background-color: #028062;
-     text-decoration: none;
- }
+    }
 
- .dropdown:hover {
-     background-color: #028062;
- }
+    .menu a {
+      color: #fff;
+      text-decoration: none;
+    }
 
- .dropdown-content {
-     display: none;
-     position: absolute;
-     background-color: #f9f9f9;
-     min-width: 160px;
-     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-     z-index: 1;
- }
+    .dropdown .dropbtn {
+      font-size: 16px;
+      color: white;
+      border: none;
+      background-color: transparent;
+    }
 
- .dropdown-content a {
-     color: black;
-     padding: 12px 16px;
-     text-decoration: none;
-     display: block;
-     text-align: left;
- }
+    .head a:hover {
+      background-color: #028062;
+      text-decoration: none;
+    }
 
- .dropdown-content a:hover {
-     background-color: #ddd;
- }
+    .dropdown:hover {
+      background-color: #028062;
+    }
 
- .dropdown:hover .dropdown-content {
-     display: block;
- }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
 
- #CP {
-     font-size: 15px;
-     padding: 10px;
-     border-radius: 20px;
-     border: 1px solid white;
-     margin-top: 15px;
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
 
- }
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
 
- .dropbtn {
-     display: flex;
- }
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
 
- #search {
-     color: white;
-     margin-left: 10px;
+    #CP {
+      font-size: 15px;
+      padding: 10px;
+      border-radius: 20px;
+      border: 1px solid white;
+      margin-top: 15px;
 
- }
+    }
 
- #profile {
-     margin-left: 10px;
-     color: white;
-     padding-right: 10px;
- }
+    .dropbtn {
+      display: flex;
+    }
 
- /* AMAN end */
- /* ---------------    SAIPRASAD         -------------------- */
+    #search {
+      color: white;
+      margin-left: 10px;
 
- body {
-     background-color: #E3E6E3;
- }
+    }
 
- #navbar-black {
-     width: 100%;
-     margin: auto;
-     display: flex;
-     background-color: #4a4a4aba;
-     color: white;
-     justify-content: space-between;
-     margin-bottom: 20px;
- }
+    #profile {
+      margin-left: 10px;
+      color: white;
+      padding-right: 10px;
+    }
 
- #tabs {
-     display: flex;
- }
+    /* AMAN end */
+    /* ---------------    SAIPRASAD         -------------------- */
 
- #tabs>p {
-     padding: 8px 8px 8px 8px;
-     margin-top: 0px;
-     margin-bottom: 0px;
-     color: white;
- }
+    body {
+      background-color: #E3E6E3;
+    }
 
- #tabs>p:first-child {
-     background-color: #333333;
- }
+    #navbar-black {
+      width: 100%;
+      margin: auto;
+      display: flex;
+      background-color: #4a4a4aba;
+      color: white;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
 
- #tabs>p:hover,
- #all:hover {
-     background-color: #333333c0;
-     cursor: pointer;
-     color: white;
- }
+    #tabs {
+      display: flex;
+    }
 
- #all {
-     padding: 10px 20px 0px 20px;
-     margin-top: 0px;
-     margin-bottom: 0px;
-     display: flex;
-     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    #tabs>p {
+      padding: 8px 8px 8px 8px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      color: white;
+    }
 
- }
+    #tabs>p:first-child {
+      background-color: #333333;
+    }
 
- .btn {
-     height: 100px;
-     width: 80%;
-     background-color: #444444;
-     display: flex;
-     margin: auto;
- }
+    #tabs>p:hover,
+    #all:hover {
+      background-color: #333333c0;
+      cursor: pointer;
+      color: white;
+    }
 
- .btn>button {
-     border: none;
-     border-radius: 20px;
-     background-color: #333333;
-     color: white;
-     height: 30px;
-     margin-left: 30px;
-     margin-top: 10px;
-     padding-bottom: 20px;
-     padding-top: 8px;
-     padding-left: 30px;
-     padding-right: 30px;
- }
+    #all {
+      padding: 10px 20px 0px 20px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      display: flex;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
- .btn>button:focus {
-     background-color: white;
-     color: black;
+    }
 
- }
- #card{
-    display: flex;
-   
-    margin: auto;
-    margin-bottom: 15px;
-    border-bottom:  1px solid grey;
-    padding: 15px;
-    padding-bottom: 15px;
-    
-    
- }
- #quiz  h2:hover {
-    text-decoration: underline;
- }
- 
-    
-       
+    .btn {
+      height: 100px;
+      width: 80%;
+      background-color: #444444;
+      display: flex;
+      margin: auto;
+    }
 
-     
-    </style>
-    
+    .btn>button {
+      border: none;
+      border-radius: 20px;
+      background-color: #333333;
+      color: white;
+      height: 30px;
+      margin-left: 30px;
+      margin-top: 10px;
+      padding-bottom: 20px;
+      padding-top: 8px;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    .btn>button:focus {
+      background-color: white;
+      color: black;
+
+    }
+
+    #card {
+      display: flex;
+
+      margin: auto;
+      margin-bottom: 15px;
+      border-bottom: 1px solid grey;
+      padding: 15px;
+      padding-bottom: 15px;
+
+
+    }
+
+    #quiz h2:hover {
+      text-decoration: underline;
+    }
+  </style>
+
 </head>
+
 <body>
-    <div id="HEADER">
-        <!-- AMAN START -->
-        <div class="head">
-          <div class="logo">
-            <img src="https://www.cricbuzz.com/images/cb_logo.svg" alt="error" />
-          </div>
-          <div class="menu">
-            <ul style="padding-left: 0px;">
-              <li><a href="/Cricbuzz/livescores.html">Live Scores</a></li>
-              <li><a href="/Cricbuzz/Schedule/scores.html">Schedule</a></li>
-              <li><a href="/Cricbuzz/QUIZ/landing.html">Quiz</a></li>
-              <li>
-                <div class="dropdown">
-                  <button class="dropbtn">
-                    News<span class="material-symbols-outlined">
-                      arrow_drop_down
-                    </span>
-                    <i class="fa fa-caret-down"></i>
-                  </button>
-                  <div class="dropdown-content">
-                    <a href="#">All Stories</a>
-                    <a href="#">Cricbuzz Plus</a>
-                    <a href="#">Latest News</a>
-                    <a href="#">Topics</a>
-                    <a href="#">Spotlight</a>
-                    <a href="#">Opinions</a>
-                    <a href="#">Specials</a>
-                    <a href="#">Stats & Analysis</a>
-                    <a href="#">Interviews</a>
-                    <a href="#">Live Blogs</a>
-                    <a href="#">Harsha Bhogle</a>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="dropdown">
-                  <button class="dropbtn">
-                    Series<span class="material-symbols-outlined">
-                      arrow_drop_down
-                    </span>
-                    <i class="fa fa-caret-down"></i>
-                  </button>
-                  <div class="dropdown-content">
-                    <a href="#">South Africa tour of India, 2022</a>
-                    <a href="#">Australia tour of Sri Lanka, 2022</a>
-                    <a href="#">New Zealand tour of England, 2022</a>
-                    <a href="#">Bangladesh tour of West Indies, 2022</a>
-                    <a href="#">England tour of Netherlands, 2022</a>
-                    <a href="#">T20 Blast 2022</a>
-                    <a href="#">Ranji Trophy 2021-2022</a>
-                    <a href="#">ICC Cricket World Cup League Two 2019-23</a>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="dropdown">
-                  <button class="dropbtn">
-                    Teams<span class="material-symbols-outlined">
-                      arrow_drop_down
-                    </span>
-                    <i class="fa fa-caret-down"></i>
-                  </button>
-                  <div class="dropdown-content">
-                    <table>
-                      <thead>
-                        <th>TEST TEAMS</th>
-                        <th>ASSOCIATE</th>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>India</td>
-                          <td>Italy</td>
-                        </tr>
-                        <tr>
-                          <td>Ireland</td>
-                          <td>Botswana</td>
-                        </tr>
-                        <tr>
-                          <td>Pakistan</td>
-                          <td>Belgium</td>
-                        </tr>
-                        <tr>
-                          <td>Australia</td>
-                          <td>Iran</td>
-                        </tr>
-                        <tr>
-                          <td>Sri Lanka</td>
-                          <td>Denmark</td>
-                        </tr>
-                        <tr>
-                          <td>Bangladesh</td>
-                          <td>Singapore</td>
-                        </tr>
-                        <tr>
-                          <td>England</td>
-                          <td>Namibia</td>
-                        </tr>
-                        <tr>
-                          <td>West Indies</td>
-                          <td>Uganda</td>
-                        </tr>
-                        <tr>
-                          <td>South Africa</td>
-                          <td>Malaysia</td>
-                        </tr>
-                        <tr>
-                          <td>Zimbabwe</td>
-                          <td>Nepal</td>
-                        </tr>
-                        <tr>
-                          <td>New Zealand</td>
-                          <td>Germany</td>
-                        </tr>
-                        <tr>
-                          <td>Afghanistan</td>
-                          <td>Canada</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="dropdown">
-                  <button class="dropbtn">
-                    Videos<span class="material-symbols-outlined">
-                      arrow_drop_down
-                    </span>
-                    <i class="fa fa-caret-down"></i>
-                  </button>
-                  <div class="dropdown-content">
-                    <a href="#">All Vedios</a>
-                    <a href="#">Categories</a>
-                    <a href="#">Playlists</a>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="dropdown">
-                  <button class="dropbtn">
-                    Rankings<span class="material-symbols-outlined">
-                      arrow_drop_down
-                    </span>
-                    <i class="fa fa-caret-down"></i>
-                  </button>
-                  <div class="dropdown-content">
-                    <a href="#">ICC Rankings-Men</a>
-                    <a href="#">ICC Rankings-Women</a>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="dropdown">
-                  <button class="dropbtn">
-                    More<span class="material-symbols-outlined">
-                      arrow_drop_down
-                    </span>
-                    <i class="fa fa-caret-down"></i>
-                  </button>
-                  <div class="dropdown-content">
-                    <a href="#">World Test Championship</a>
-                    <a href="#">World Cup Super League</a>
-                    <a href="#">Quiz</a>
-                    <a href="#">Photos</a>
-                    <a href="#">Mobile Apps</a>
-                    <a href="#">Careers</a>
-                    <a href="#">Contact Us</a>
-                  </div>
-                </div>
-              </li>
-              <button id="CP">
-              <a style=" color: black;" href="cricbuzz plus/pluspage.html">Cricbuzz Plus</a>
+  <div id="HEADER">
+    <!-- AMAN START -->
+    <div class="head">
+      <div class="logo">
+        <img src="https://www.cricbuzz.com/images/cb_logo.svg" alt="error" />
+      </div>
+      <div class="menu">
+        <ul style="padding-left: 0px;">
+          <li><a href="/Cricbuzz/livescores.html">Live Scores</a></li>
+          <li><a href="/Cricbuzz/Schedule/scores.html">Schedule</a></li>
+          <li><a href="/Cricbuzz/QUIZ/landing.html">Quiz</a></li>
+          <li>
+            <div class="dropdown">
+              <button class="dropbtn">
+                News<span class="material-symbols-outlined">
+                  arrow_drop_down
+                </span>
+                <i class="fa fa-caret-down"></i>
               </button>
-            </ul>
-          </div>
-          <div id="search">
-    
-            <span class="material-symbols-outlined">
-              search
-            </span>
-          </div>
-          <a href="Signup.html">
-            <div id="profile">
-              <span class="material-symbols-outlined">
-                account_circle
-              </span>
+              <div class="dropdown-content">
+                <a href="#">All Stories</a>
+                <a href="#">Cricbuzz Plus</a>
+                <a href="#">Latest News</a>
+                <a href="#">Topics</a>
+                <a href="#">Spotlight</a>
+                <a href="#">Opinions</a>
+                <a href="#">Specials</a>
+                <a href="#">Stats & Analysis</a>
+                <a href="#">Interviews</a>
+                <a href="#">Live Blogs</a>
+                <a href="#">Harsha Bhogle</a>
+              </div>
             </div>
-          </a>
+          </li>
+          <li>
+            <div class="dropdown">
+              <button class="dropbtn">
+                Series<span class="material-symbols-outlined">
+                  arrow_drop_down
+                </span>
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">South Africa tour of India, 2022</a>
+                <a href="#">Australia tour of Sri Lanka, 2022</a>
+                <a href="#">New Zealand tour of England, 2022</a>
+                <a href="#">Bangladesh tour of West Indies, 2022</a>
+                <a href="#">England tour of Netherlands, 2022</a>
+                <a href="#">T20 Blast 2022</a>
+                <a href="#">Ranji Trophy 2021-2022</a>
+                <a href="#">ICC Cricket World Cup League Two 2019-23</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="dropdown">
+              <button class="dropbtn">
+                Teams<span class="material-symbols-outlined">
+                  arrow_drop_down
+                </span>
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <table>
+                  <thead>
+                    <th>TEST TEAMS</th>
+                    <th>ASSOCIATE</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>India</td>
+                      <td>Italy</td>
+                    </tr>
+                    <tr>
+                      <td>Ireland</td>
+                      <td>Botswana</td>
+                    </tr>
+                    <tr>
+                      <td>Pakistan</td>
+                      <td>Belgium</td>
+                    </tr>
+                    <tr>
+                      <td>Australia</td>
+                      <td>Iran</td>
+                    </tr>
+                    <tr>
+                      <td>Sri Lanka</td>
+                      <td>Denmark</td>
+                    </tr>
+                    <tr>
+                      <td>Bangladesh</td>
+                      <td>Singapore</td>
+                    </tr>
+                    <tr>
+                      <td>England</td>
+                      <td>Namibia</td>
+                    </tr>
+                    <tr>
+                      <td>West Indies</td>
+                      <td>Uganda</td>
+                    </tr>
+                    <tr>
+                      <td>South Africa</td>
+                      <td>Malaysia</td>
+                    </tr>
+                    <tr>
+                      <td>Zimbabwe</td>
+                      <td>Nepal</td>
+                    </tr>
+                    <tr>
+                      <td>New Zealand</td>
+                      <td>Germany</td>
+                    </tr>
+                    <tr>
+                      <td>Afghanistan</td>
+                      <td>Canada</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="dropdown">
+              <button class="dropbtn">
+                Videos<span class="material-symbols-outlined">
+                  arrow_drop_down
+                </span>
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">All Vedios</a>
+                <a href="#">Categories</a>
+                <a href="#">Playlists</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="dropdown">
+              <button class="dropbtn">
+                Rankings<span class="material-symbols-outlined">
+                  arrow_drop_down
+                </span>
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">ICC Rankings-Men</a>
+                <a href="#">ICC Rankings-Women</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="dropdown">
+              <button class="dropbtn">
+                More<span class="material-symbols-outlined">
+                  arrow_drop_down
+                </span>
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">World Test Championship</a>
+                <a href="#">World Cup Super League</a>
+                <a href="#">Quiz</a>
+                <a href="#">Photos</a>
+                <a href="#">Mobile Apps</a>
+                <a href="#">Careers</a>
+                <a href="#">Contact Us</a>
+              </div>
+            </div>
+          </li>
+          <button id="CP">
+            <a style=" color: black;" href="cricbuzz plus/pluspage.html">Cricbuzz Plus</a>
+          </button>
+        </ul>
+      </div>
+      <div id="search">
+
+        <span class="material-symbols-outlined">
+          search
+        </span>
+      </div>
+      <a href="Signup.html">
+        <div id="profile">
+          <span class="material-symbols-outlined">
+            account_circle
+          </span>
         </div>
-        <!-- AMAN START -->
-        <!-- /* ------------------SAIPRASAD  --------------------------------- */ -->
-        <div id="navbar-black">
-          <div id="tabs">
-            <p>MATCHES</p>
-            <p>NZ vs ENG-Stumps</p>
-            <p>MP vs BEN-Live</p>
-            <p>IND vs RSA-Preview</p>
-            <p>SL vs AUS-Preview</p>
-            <p>Zim vs AFG-Preview</p>
-          </div>
-          <div id="all"><span>ALL</span>
-            <div><span class="material-symbols-outlined">
-                arrow_drop_down
-              </span>
-            </div>
-          </div>
+      </a>
+    </div>
+    <!-- AMAN START -->
+    <!-- /* ------------------SAIPRASAD  --------------------------------- */ -->
+    <div id="navbar-black">
+      <div id="tabs">
+        <p>MATCHES</p>
+        <p>NZ vs ENG-Stumps</p>
+        <p>MP vs BEN-Live</p>
+        <p>IND vs RSA-Preview</p>
+        <p>SL vs AUS-Preview</p>
+        <p>Zim vs AFG-Preview</p>
+      </div>
+      <div id="all"><span>ALL</span>
+        <div><span class="material-symbols-outlined">
+            arrow_drop_down
+          </span>
         </div>
       </div>
-      <!-- /* ------------------SAIPRASAD FINISH --------------------------------- */ -->
+    </div>
+  </div>
+  <!-- /* ------------------SAIPRASAD FINISH --------------------------------- */ -->
 
 
-   <h1>Cricket Quiz</h1>
-   <div id="quiz">
-   
-   
-   </div>
-   
-  
+  <h1>Cricket Quiz</h1>
+  <div id="quiz">
+
+
+  </div>
+
+
 </body>
+
 </html>
 <script>
-    quizArr =[
-        {
-            pic:"https://www.cricbuzz.com/a/img/v1/205x152/i1/c207781/cms-img.jpg" ,
-            title:"World Test Championship 2021 quiz",
-            des:"How well do you remember the first season? Jump in and get yourself tested!",
+  quizArr = [
+    {
+      pic: "https://www.cricbuzz.com/a/img/v1/205x152/i1/c207781/cms-img.jpg",
+      title: "World Test Championship 2021 quiz",
+      des: "How well do you remember the first season? Jump in and get yourself tested!",
 
-        },
-        {
-            pic:"https://www.cricbuzz.com/a/img/v1/205x152/i1/c191369/cms-img.jpg" ,
-            title:"The 'Rawalpindi express' quiz",
-            des:"One of the fastest bowlers in cricket's history, Shoaib Akhtar, turns 45 today. Take this quiz and see if you can hit 10/10 correct.",
+    },
+    {
+      pic: "https://www.cricbuzz.com/a/img/v1/205x152/i1/c191369/cms-img.jpg",
+      title: "The 'Rawalpindi express' quiz",
+      des: "One of the fastest bowlers in cricket's history, Shoaib Akhtar, turns 45 today. Take this quiz and see if you can hit 10/10 correct.",
 
-        },
-        {
-            pic:"https://www.cricbuzz.com/a/img/v1/205x152/i1/c191279/cms-img.jpg" ,
-            title:"The 'ever-cool-Kane' quiz",
-            des:"Kane Williamson turns 30 today, how well do you know the New Zealand skipper? Take this quiz and find out...",
+    },
+    {
+      pic: "https://www.cricbuzz.com/a/img/v1/205x152/i1/c191279/cms-img.jpg",
+      title: "The 'ever-cool-Kane' quiz",
+      des: "Kane Williamson turns 30 today, how well do you know the New Zealand skipper? Take this quiz and find out...",
 
-        },
-        {
-            pic:"https://www.cricbuzz.com/a/img/v1/205x152/i1/c191005/cms-img.jpg" ,
-            title:"How well do you know Jimmy?",
-            des:"The James Anderson Birthday Edition quiz.",
+    },
+    {
+      pic: "https://www.cricbuzz.com/a/img/v1/205x152/i1/c191005/cms-img.jpg",
+      title: "How well do you know Jimmy?",
+      des: "The James Anderson Birthday Edition quiz.",
 
-        },
-        {
-            pic:"https://www.cricbuzz.com/a/img/v1/205x152/i1/c190890/cms-img.jpg" ,
-            title:"'The long walk back': Unwanted Records",
-            des:"'The long walk back': Unwanted Records",
+    },
+    {
+      pic: "https://www.cricbuzz.com/a/img/v1/205x152/i1/c190890/cms-img.jpg",
+      title: "'The long walk back': Unwanted Records",
+      des: "'The long walk back': Unwanted Records",
 
-        },
-        {
-            pic:"https://www.cricbuzz.com/a/img/v1/205x152/i1/c190188/cms-img.jpg" ,
-            title:"How well do you Know MSD?",
-            des:"Claim yourself a true MSD fan? Take this quiz and see if you can 'finish things off in style' ala Dhoni",
+    },
+    {
+      pic: "https://www.cricbuzz.com/a/img/v1/205x152/i1/c190188/cms-img.jpg",
+      title: "How well do you Know MSD?",
+      des: "Claim yourself a true MSD fan? Take this quiz and see if you can 'finish things off in style' ala Dhoni",
 
-        },
-         {
-            pic:"https://www.cricbuzz.com/a/img/v1/205x152/i1/c207781/cms-img.jpg" ,
-            title:"World Test Championship 2021 quiz",
-            des:"How well do you remember the first season? Jump in and get yourself tested!",
+    },
+    {
+      pic: "https://www.cricbuzz.com/a/img/v1/205x152/i1/c207781/cms-img.jpg",
+      title: "World Test Championship 2021 quiz",
+      des: "How well do you remember the first season? Jump in and get yourself tested!",
 
-        },
-        {
-            pic:"https://www.cricbuzz.com/a/img/v1/205x152/i1/c191369/cms-img.jpg" ,
-            title:"The 'Rawalpindi express' quiz",
-            des:"One of the fastest bowlers in cricket's history, Shoaib Akhtar, turns 45 today. Take this quiz and see if you can hit 10/10 correct.",
+    },
+    {
+      pic: "https://www.cricbuzz.com/a/img/v1/205x152/i1/c191369/cms-img.jpg",
+      title: "The 'Rawalpindi express' quiz",
+      des: "One of the fastest bowlers in cricket's history, Shoaib Akhtar, turns 45 today. Take this quiz and see if you can hit 10/10 correct.",
 
-        },
-        {
-            pic:"https://www.cricbuzz.com/a/img/v1/205x152/i1/c191279/cms-img.jpg" ,
-            title:"The 'ever-cool-Kane' quiz",
-            des:"Kane Williamson turns 30 today, how well do you know the New Zealand skipper? Take this quiz and find out...",
+    },
+    {
+      pic: "https://www.cricbuzz.com/a/img/v1/205x152/i1/c191279/cms-img.jpg",
+      title: "The 'ever-cool-Kane' quiz",
+      des: "Kane Williamson turns 30 today, how well do you know the New Zealand skipper? Take this quiz and find out...",
 
-        },
-        {
-            pic:"https://www.cricbuzz.com/a/img/v1/205x152/i1/c191005/cms-img.jpg" ,
-            title:"How well do you know Jimmy?",
-            des:"The James Anderson Birthday Edition quiz.",
+    },
+    {
+      pic: "https://www.cricbuzz.com/a/img/v1/205x152/i1/c191005/cms-img.jpg",
+      title: "How well do you know Jimmy?",
+      des: "The James Anderson Birthday Edition quiz.",
 
-        },
-        {
-            pic:"https://www.cricbuzz.com/a/img/v1/205x152/i1/c190890/cms-img.jpg" ,
-            title:"'The long walk back': Unwanted Records",
-            des:"'The long walk back': Unwanted Records",
+    },
+    {
+      pic: "https://www.cricbuzz.com/a/img/v1/205x152/i1/c190890/cms-img.jpg",
+      title: "'The long walk back': Unwanted Records",
+      des: "'The long walk back': Unwanted Records",
 
-        },
-        {
-            pic:"https://www.cricbuzz.com/a/img/v1/205x152/i1/c190188/cms-img.jpg" ,
-            title:"How well do you Know MSD?",
-            des:"Claim yourself a true MSD fan? Take this quiz and see if you can 'finish things off in style' ala Dhoni",
+    },
+    {
+      pic: "https://www.cricbuzz.com/a/img/v1/205x152/i1/c190188/cms-img.jpg",
+      title: "How well do you Know MSD?",
+      des: "Claim yourself a true MSD fan? Take this quiz and see if you can 'finish things off in style' ala Dhoni",
 
-        }
-    ]
-     
-    
-    
-    quizArr.forEach(function(ele){
-       let box= document.createElement("div")
-       box.setAttribute("class","box")
-
-       
-      
-       let avatar= document.createElement("img")
-       avatar.setAttribute("src",ele.pic)
-       avatar.style.marginRight="50px"
-
-        let division =document.createElement("div")
-        division.setAttribute("id","card")
-
-        let title = document.createElement("h2")
-        title.innerText= ele.title;
-        title.style.cursor="pointer"
-        // title.style.innerText:ho
-
-        let des = document.createElement("p")
-        des.innerText = ele.des
-        box.append(title,des)
-
-        // document.querySelector(".card").append(title,des)
-        division.append(avatar,box)
-      
-        document.querySelector("#quiz").append(division)
-        
-
-
-    }) 
-    document.querySelector("h2").addEventListener("click" ,pageChange)
-
-    function pageChange(event){
-        location.href="first.html"
     }
+  ]
+
+
+
+  quizArr.forEach(function (ele) {
+    let box = document.createElement("div")
+    box.setAttribute("class", "box")
+
+
+
+    let avatar = document.createElement("img")
+    avatar.setAttribute("src", ele.pic)
+    avatar.style.marginRight = "50px"
+
+    let division = document.createElement("div")
+    division.setAttribute("id", "card")
+
+    let title = document.createElement("h2")
+    title.innerText = ele.title;
+    title.style.cursor = "pointer"
+    // title.style.innerText:ho
+
+    let des = document.createElement("p")
+    des.innerText = ele.des
+    box.append(title, des)
+
+    // document.querySelector(".card").append(title,des)
+    division.append(avatar, box)
+
+    document.querySelector("#quiz").append(division)
+
+
+
+  })
+  document.querySelector("h2").addEventListener("click", pageChange)
+
+  function pageChange(event) {
+    location.href = "first.html"
+  }
 </script>
