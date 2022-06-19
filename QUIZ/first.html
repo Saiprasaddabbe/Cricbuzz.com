@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        div{
+            width:40%;
+            margin: auto;
+        }
+        img{
+            width: 80%;
+          
+        }
+
+        button {
+            margin: 5px;
+            height: 40px;
+            width: 80%;
+        } 
+
+         .q1 h2 {
+            color: red; 
+        } 
+        p, h3{
+           width: 80%;
+        }
+        .nxt {
+            width:10%;
+            background-color: brown;
+            color: white;
+            margin-left: 70%;
+        }
+    </style>
+</head>
+<body>
+    <h1>World Test Championship 2021 quiz</h1>
+    <div class="q1">
+        <img src="https://cdn.riddle.com/embeds/v2/images/q_80,c_fill,w_960,h_540/dd9/dd9b4c0239fb58e1b1668788404dcbeb.jpg"/>
+        <h3>Which team lost most Tests in the first cycle of the WTC?</h3>
+        <br>
+        <button>England</button>
+        <br>
+        <button>Sri Lanka</button>
+        <br>
+
+        <button>Bangladesh</button>
+        <br>
+        <button>South Africa</button>
+        <br>
+        <h2></h2>
+        <p class="ans"></p>
+        <button class="nxt" href="seco.html">NEXT</button>
+    </div>
+    
+   
+
+  
+</body>
+</html>
+<script>
+
+    
+    let btn = document.querySelectorAll(".q1 > button")
+    for(let i=0;i<btn.length;i++){
+         btn[0].addEventListener("click" , wrong)
+         btn[1].addEventListener("click" , wrong1)
+         btn[2].addEventListener("click" , wrong2)
+         btn[3].addEventListener("click" , right)
+         
+    }
+
+    function wrong(){
+        btn[0].style.backgroundColor= "red"
+        document.querySelector("h2").innerText= " WRONG!"
+        document.querySelector(".ans").innerText="South Africa lost eight of the 11 Tests they played across four series. England lost seven Tests, while Sri Lanka and Bangladesh faced six defeats each."
+        document.querySelector("img").src="https://cdn.riddle.com/embeds/v2/images/q_80,c_fill,w_960,h_540/ffe/ffe22df46e42ce2a5cbdd3cc4cc1a44b.jpg"
+        btn[0].disabled="true"
+        btn[1].disabled="true"
+        btn[2].disabled="true"
+        btn[3].disabled="true"
+    }
+    function wrong1(){
+        btn[1].style.backgroundColor= "red"
+        document.querySelector("h2").innerText= " WRONG!"
+        document.querySelector(".ans").innerText="South Africa lost eight of the 11 Tests they played across four series. England lost seven Tests, while Sri Lanka and Bangladesh faced six defeats each."
+        document.querySelector("img").src="https://cdn.riddle.com/embeds/v2/images/q_80,c_fill,w_960,h_540/ffe/ffe22df46e42ce2a5cbdd3cc4cc1a44b.jpg"
+        btn[0].disabled="true"
+        btn[1].disabled="true"
+        btn[2].disabled="true"
+        btn[3].disabled="true"
+    }
+    function wrong2(){
+        btn[2].style.backgroundColor= "red"
+        document.querySelector("h2").innerText= " WRONG!"
+        document.querySelector(".ans").innerText="South Africa lost eight of the 11 Tests they played across four series. England lost seven Tests, while Sri Lanka and Bangladesh faced six defeats each."
+        document.querySelector("img").src="https://cdn.riddle.com/embeds/v2/images/q_80,c_fill,w_960,h_540/ffe/ffe22df46e42ce2a5cbdd3cc4cc1a44b.jpg"
+        btn[0].disabled="true"
+        btn[1].disabled="true"
+        btn[2].disabled="true"
+        btn[3].disabled="true"
+    }
+    function right(){
+        btn[3].style.backgroundColor= "green"
+       let answer= document.querySelector("h2")
+       answer.innerText= " RIGHT!"
+       answer.style.color="green"
+        document.querySelector("h2").innerText.style.color="green"
+        
+        document.querySelector(".ans").innerText="South Africa lost eight of the 11 Tests they played across four series. England lost seven Tests, while Sri Lanka and Bangladesh faced six defeats each."
+        document.querySelector("img").src="https://cdn.riddle.com/embeds/v2/images/q_80,c_fill,w_960,h_540/ffe/ffe22df46e42ce2a5cbdd3cc4cc1a44b.jpg"
+        btn[0].disabled="true"
+        btn[1].disabled="true"
+        btn[2].disabled="true"
+        btn[3].disabled="true"
+        
+    }
+
+    
+document.querySelector(".nxt").addEventListener("click", next)
+function next(event){
+    location.href="seco.html"
+}
+    
+
+</script>
